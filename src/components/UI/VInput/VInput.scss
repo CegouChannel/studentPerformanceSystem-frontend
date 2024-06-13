@@ -1,0 +1,24 @@
+@import '@/assets/scss/variables';
+.ipt {
+  border-radius: 5px;
+  color: $dark-gray;
+
+  &_normal {
+    width: 216px;
+    height: 49px;
+    font-size: 13px;
+    font-weight: 400;
+  }
+
+  &_large {
+    width: 348px;
+    height: 54px;
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  &_fullWidth {
+    width: 100%;
+  }
+
+}

@@ -1,0 +1,31 @@
+@import '@/assets/scss/variables';
+
+.info {
+  min-width: 30%;
+  min-height: 80px;
+  padding: 15px;
+  background: $primary;
+  position: fixed;
+  left: 50%;
+  top: -100%;
+  transform: translate(-50%, 0);
+  transition: .5s;
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+
+  &-content {
+    font-size: 16px;
+    color: $white;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+.active {
+  top: 1%;
+  transition: .3s;
+}

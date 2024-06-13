@@ -1,0 +1,29 @@
+@import '@/assets/scss/variables';
+
+.select {
+  color: $dark-gray;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+
+  &_medium {
+    width: 216px;
+    height: 49px;
+    font-weight: 400;
+    font-size: 13px;
+  }
+
+  &_large {
+    width: 348px;
+    height: 54px;
+    font-weight: 400;
+    font-size: 16px;
+  }
+
+  &_fullWidth {
+    width: 100%;
+  }
+
+  &-option {
+  }
+}

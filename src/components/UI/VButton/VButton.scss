@@ -1,0 +1,65 @@
+@import '@/assets/scss/variables';
+
+.btn {
+  border-radius: 5px;
+  color: $white;
+  font-weight: 600;
+  font-size: 20px;
+  text-transform: uppercase;
+
+  &_medium {
+    width: 162px;
+    height: 54px;
+  }
+
+  &_large{
+    width: 202px;
+    height: 54px;
+  }
+
+  &_fullWidth {
+    width: 100%;
+    height: 54px;
+  }
+
+  &_icon {
+    background: none;
+  }
+
+  &_small {
+    width: 100px;
+    height: 40px;
+    font-size: 14px;
+  }
+
+  &_primary {
+    background: $primary;
+    transition: .4s;
+
+    &:hover {
+      background: $primary-hover;
+      transition: .4s;
+    }
+  }
+
+  &_secondary {
+    background: $secondary;
+    transition: .4s;
+
+    &:hover {
+      background: $secondary-hover;
+      transition: .4s;
+    }
+  }
+
+  &_yellow {
+    background: $yellow;
+    transition: .4s;
+  }
+
+  &_orange{
+    background: $orange;
+    transition: .4s;
+  }
+}
+

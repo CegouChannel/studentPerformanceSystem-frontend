@@ -1,0 +1,74 @@
+@import '@/assets/scss/variables';
+
+.table {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+
+  &-content {
+    border-collapse: collapse;
+  }
+
+  &-head {
+    border-bottom: 1px solid $gray;
+
+    &-row {
+      border-bottom: 1px solid $gray;
+    }
+
+    &-student {
+    }
+
+    &-lesson {
+      border-bottom: 1px solid $gray;
+    }
+  }
+
+  &-body {
+    &-row {
+      height: 50px;
+      border-bottom: 1px solid $gray;
+      padding: 1px;
+
+      & > tr {
+        min-height: 50px;
+        max-height: 50px;
+      }
+    }
+
+    &-fio {
+      padding: 0 8px;
+    }
+    &-status {
+      text-align: center;
+    }
+  }
+}
+
+th {
+  padding: 20px;
+  font-size: 16px;
+  color: $secondary;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.wasNot {
+  background: $secondary;
+  color: $white;
+}
+
+.sick {
+  background: $primary;
+  color: $white;
+}
+
+.lessons {
+  overflow: hidden;
+  overflow-y: scroll;
+  max-width: 80%;
+}
+
+.students {
+  width: 15%;
+}

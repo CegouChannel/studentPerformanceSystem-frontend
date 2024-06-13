@@ -1,0 +1,56 @@
+@import '@/assets/scss/variables';
+.journal {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 0.3fr 1fr;
+
+  &-title {
+    width: 95%;
+    font-weight: 600;
+    margin-bottom: 40px;
+    font-size: 32px;
+  }
+
+  &-content {
+    width: 95%;
+    margin: 0 auto;
+  }
+}
+
+.editJournal {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  &-title {
+    margin-bottom: 20px;
+  }
+
+  &-subtitle {
+    margin-bottom: 10px;
+    color: $dark-gray;
+  }
+
+  &-status {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  &-estimate {
+    display: flex;
+    justify-content: start;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+
+  &-actions {
+    display: flex;
+    justify-content: end;
+  }
+}
+
+.table-actions {
+  margin-bottom: 40px;
+}

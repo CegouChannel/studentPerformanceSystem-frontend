@@ -1,0 +1,46 @@
+{
+  "name": "basic",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "serve": "vite preview",
+    "build": "vite build",
+    "dev": "vite",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@mdi/font": "5.9.55",
+    "axios": "^1.5.0",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "date-fns": "^2.30.0",
+    "express": "^4.19.2",
+    "js-cookie": "^3.0.5",
+    "mysql": "^2.18.1",
+    "mysql2": "^3.9.7",
+    "password-hash": "^1.2.2",
+    "pinia": "^2.1.6",
+    "roboto-fontface": "*",
+    "sass": "^1.68.0",
+    "uuid": "^9.0.1",
+    "vue": "^3.3.4",
+    "vue-router": "^4.2.5",
+    "vuetify": "^3.0.0-beta.0",
+    "webfontloader": "^1.0.0"
+  },
+  "devDependencies": {
+    "@rushstack/eslint-patch": "^1.1.4",
+    "@vitejs/plugin-vue": "^4.2.3",
+    "@vue/eslint-config-prettier": "^7.0.0",
+    "eslint": "^8.50.0",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-vue": "^9.3.0",
+    "prettier": "^2.7.1",
+    "unplugin-imagemin": "^0.5.13",
+    "vite": "^4.4.5",
+    "vite-plugin-vuetify": "^1.0.0-alpha.12",
+    "vue-cli-plugin-vuetify": "~2.5.8"
+  },
+  "type": "module"
+}

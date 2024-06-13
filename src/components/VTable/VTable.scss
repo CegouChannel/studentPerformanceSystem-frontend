@@ -1,0 +1,112 @@
+@import '@/assets/scss/variables';
+
+.table {
+  width: 95%;
+  min-height: 645px;
+  margin: 0 auto 30px;
+  background: $white;
+  padding: 24px 30px;
+  border-radius: 10px;
+  filter: drop-shadow(0 4px 8px $shadow);
+
+
+  &-head {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 44px;
+
+    &-title {
+      margin-bottom: 28px;
+      display: flex;
+      align-items: center;
+
+      & > .title {
+        font-weight: 400;
+        font-size: 28px;
+      }
+    }
+
+    &-actions {
+      display: grid;
+      grid-template-rows: 1fr;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 60px;
+    }
+
+    &-search {
+      display: flex;
+      justify-content: end;
+    }
+
+    &-select {
+      display: flex;
+      justify-content: center;
+    }
+
+    &-input {
+      display: flex;
+      justify-content: start;
+    }
+  }
+
+  &-err {
+    font-size: 16px;
+    text-align: center;
+    color: $secondary;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+
+  &-body {
+    width: 100%;
+    display: grid;
+
+    &-head > tbody > tr {
+      font-size: 18px;
+      color: $secondary;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
+    .table-body-row {
+      font-size: 16px;
+      color: $black;
+      font-weight: 400;
+    }
+
+    &-head,
+    &-data {
+      border-collapse: collapse;
+
+      & > tbody > tr{
+        border-bottom: 1px solid $gray;
+        padding: 20px 40px;
+        display: grid;
+
+        & > td:not(:first-child):not(:last-child) {
+          text-align: center;
+        }
+
+        & > td:first-child {
+          text-align: start;
+        }
+
+        & > td:last-child {
+          text-align: end;
+        }
+
+      }
+    }
+  }
+}
+
+.list-enter-active,
+.list-leave-active {
+  transition: all 0.5s ease;
+}
+
+.list-enter-from,
+.list-leave-to {
+  opacity: 0;
+  transform: translateX(30px);
+}

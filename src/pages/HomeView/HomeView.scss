@@ -1,0 +1,53 @@
+@import '@/assets/scss/variables';
+
+.page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+  &-auth {
+    width: 30%;
+    padding: 55px 29px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: $white;
+    border-radius: 10px;
+    filter: drop-shadow(0 4px 8px $shadow);
+    transition: .5s;
+  }
+}
+
+.auth {
+  &-inp:first-child {
+    margin-bottom: 25px;
+  }
+
+  &-forgot {
+    margin-bottom: 25px;
+  }
+
+  &-btn {
+    margin-bottom: 10px;
+  }
+
+  &-err {
+    font-size: 16px;
+    color: $secondary;
+    text-align: center;
+    font-weight: 400;
+  }
+
+}
+
+.list-enter-active,
+.list-leave-active {
+  transition: all 0.5s ease;
+}
+
+.list-enter-from,
+.list-leave-to {
+  opacity: 0;
+  transform: translateX(30px);
+}
